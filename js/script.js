@@ -10,7 +10,7 @@ var scaleMouth = d3.scaleLinear();
 
 
 var width = 2000;
-var height = 1000;
+var height = 900;
 
 var margin = {left: 50, top: 10, right:30, bottom: 10};
 
@@ -150,7 +150,7 @@ function drawing(dataset){
     faceContainer.append("path")
         .attr("class", "face")
         .attr("d", drawFace)
-        .attr("fill", "white")
+        .attr("fill", "#ffe6e6")
         .attr("stroke", "black");
         
     faceContainer.append("ellipse")
@@ -192,14 +192,14 @@ function drawing(dataset){
     faceContainer.append("path")
         .attr("class", "nose")
         .attr("d", drawNose)
-        .attr("fill", "white")
+        .attr("fill", "#ffcccc")
         .attr("stroke", "black");
         
     faceContainer
         .append("path")
         .attr("class", "mouth")
         .attr("d", drawMouth)
-        .attr("fill", "white")
+        .attr("fill", "#ff9999")
         .attr("stroke", "red")
         .attr("stroke-width", 2);
         
